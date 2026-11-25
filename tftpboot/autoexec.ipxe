@@ -1,0 +1,4 @@
+#!ipxe
+echo Loading PXE Netboot Menu...
+chain --autofree http://${server_ip}:${http_port}/boot.ipxe || shell
+
